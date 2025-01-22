@@ -178,6 +178,40 @@ main{
     background: linear-gradient(180.00deg, rgb(238, 225, 255),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
 }
 
+.kind{
+    margin: 32px 0;
+    font-size: 24px;
+}
+
+.card-des{
+    font-weight: 500;
+    font-size: 15px;
+    color: rgb(128, 128, 128);
+}
+
+.read{
+    margin-top: 38px;
+    font-size: 15px;
+}
+
+.arrow{
+    height: 60px;
+    width: 60px;
+    background-color: orange;
+    border-radius: 30px;
+    padding: 17px 22px;
+    box-sizing: border-box;
+    font-size: 24px;
+    font-weight: 900;
+    color: white;
+}
+
+.arrow-icon{
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 60px;
+}
 /* responsive part */
 
 @media screen and (max-width: 576px) {
@@ -215,5 +249,17 @@ main{
         height: 42px;
         width: 131px;
         border-radius: 8px;
+    }
+    .standard{
+        font-size: 26px;
+    }
+    .card-section{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    .arrow-icon{
+        display: none;
     }
 }
