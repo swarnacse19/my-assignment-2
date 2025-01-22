@@ -1,11 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
 .quicksand-font {
     font-family: "Quicksand", serif;
     font-optical-sizing: auto;
     font-weight: 700;
     font-style: normal;
 }
+
+.quicksand-font-rale {
+    font-family: "Quicksand", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+  }
 
 .orange{
     color: #FEA301;
@@ -26,7 +35,7 @@
 
 /* header start */
 
-.navbar, .banner, .curriculum{
+.navbar, .banner, .curriculum, .stories{
     margin: 0 auto;
     width: 80%;
 }
@@ -138,7 +147,8 @@ ul.list{
 /* main part start */
 
 main{
-    background: url('../assets/bg.png'), linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%);
+    background: url('../assets/bg.png'), linear-gradient(to top, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%);
+    background-size: contain;
 }
 
 .curriculum{
@@ -212,10 +222,140 @@ main{
     gap: 10px;
     margin-bottom: 60px;
 }
+
+.stories{
+    padding: 60px 0;
+    text-align: center;
+}
+
+.our-story{
+    font-size: 46px;
+    text-align: center;
+}
+
+.story-pic{
+    margin: 80px 0;
+    justify-content: space-between;
+}
+
+.big-pic{
+    width: 540px;
+    height: 630px;
+    border-radius: 16px;
+    background: rgb(255, 255, 255);
+}
+
+.story-big{
+    border-radius: 16px 16px 0px 0px;
+}
+
+.story-1{
+    border-radius: 16px 16px 0px 0px;
+}
+
+.story-big-btn{
+    width: 174px;
+    height: 47px;
+    border-radius: 48px;
+    background: rgb(60, 216, 232); 
+    position: relative;
+    margin-left: 38px;
+    margin-top: -28px;
+    font-weight: 500;
+    font-size: 15px;
+    padding: 14px 19px;
+    box-sizing: border-box;
+    color: white;
+}
+
+.story-1-btn{
+    width: 174px;
+    height: 47px;
+    border-radius: 48px;
+    background: rgb(60, 216, 232); 
+    position: relative;
+    margin-left: 38px;
+    margin-top: -28px;
+    font-weight: 500;
+    font-size: 15px;
+    padding: 14px 19px;
+    box-sizing: border-box;
+    color: white;
+}
+
+.btn-2{
+    height: 38px;
+    background: rgb(149, 178, 38);
+    padding: 9px 19px;
+}
+
+.btn-3{
+    background: rgb(93, 88, 240);
+}
+
+.story-1-des{
+    font-size: 24px;
+    margin-top: 61px;
+    margin-left: 38px;
+    width: 80%;
+    text-align: left;
+}
+
+.story-beauty{
+    margin-top: 51px;
+    margin-left: 38px;
+    width: 80%;
+    color: rgb(102, 102, 102);
+    font-size: 15.34px;
+    font-weight: 500;
+    text-align: left;
+}
+
+.four-pic{
+    width: 290px;
+    height: 301px;
+    box-sizing: border-box;
+    border-radius: 16px;
+    background: rgb(255, 255, 255);
+}
+
+.find{
+    margin-top: 23px;
+    margin-left: 38px;
+    width: 80%;
+    font-size: 15px;
+    text-align: left;
+}
+
+.grid-pic{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 19px;
+}
+
+.view{
+    width: 197px;
+    height: 50px;
+    background: rgb(17, 17, 17);
+    border-radius: 12px;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+
+/* footer section */
+
+footer{
+    height: 519px;
+    width: 100%;
+    background-color: rgb(1, 172, 253);
+}
 /* responsive part */
 
 @media screen and (max-width: 576px) {
-    .list, .btn{
+    .list, .btn, .arrow-icon, .big-pic{
         display: none;
     }
     .hamburger{
@@ -259,7 +399,42 @@ main{
         align-items: center;
         gap: 10px;
     }
-    .arrow-icon{
-        display: none;
+    .stories{
+        padding: 40px 0;
     }
+    .our-story{
+        font-size: 26px;
+    }
+    .four-pic{
+        width: 173px;
+        height: 179px;
+        border-radius: 9.53px;
+        
+    }
+    .story-1{
+        width: 173px;
+        height: 108px;
+        border-radius: 9.53px 9.53px 0px 0px;
+    }
+    .story-1-btn{
+        width: 103px;
+        margin-left: 22px;
+        margin-top: -14px;
+        font-size: 9px;
+    }
+    .btn-2{
+        height: 22px;
+        padding: 5px 11px;
+    }
+    .find{
+        margin-top: 14px;
+        margin-left: 22px;
+        width: 80%;
+        font-size: 9px;
+        text-align: left;
+    }
+    .story-pic{
+        justify-content: center;
+    }
+    
 }
