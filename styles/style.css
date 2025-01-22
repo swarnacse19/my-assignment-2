@@ -28,7 +28,7 @@
 
 .navbar, .banner{
     margin: 0 auto;
-    max-width: 1160px;
+    width: 80%;
 }
 
 .display-flex{
@@ -42,7 +42,6 @@
     align-items: center;
 }
 
-
 .nav-img{
     gap: 10px;
 }
@@ -52,6 +51,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.hamburger{
+    display: none;
+}
+
+.border-line{
+    display: none;
 }
 
 .font-size-20{
@@ -89,8 +96,8 @@ ul.list{
 }
 
 .banner-description{
-    width: 640px;
-    height: 350px;
+    /* width: 55%; */
+    /* height: 350px; */
     box-sizing: border-box;
     padding: 0;
     margin: 0;
@@ -109,14 +116,61 @@ ul.list{
 }
 
 .btn-enroll{
+    height: 50px;
+    width: 197px;
     background-color: black;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 12px;
+    text-align: center;
     font-weight: 700;
     margin: 0;
 }
 
 .banner{
-    height: 575px;
+    /* height: 575px; */
     flex-direction: row-reverse;
+    gap: 50px;
     align-items: center;
     justify-content: space-between;
+}
+
+/* responsive part */
+
+@media screen and (max-width: 576px) {
+    .list, .btn{
+        display: none;
+    }
+    .hamburger{
+        display: block;
+        font-size: 30px;
+    }
+    .border-line{
+        display: block;
+        border: 1px solid orange;
+        width: 100%;
+    }
+    .hero{
+        width: 337px;
+        height: 413px;
+    }
+    .banner{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .banner-description{
+        /* width: 100%; */
+        text-align: center;
+    }
+    .font-56{
+        font-size: 32px;
+    }
+    .font-size-20{
+        font-size: 14px;
+    }
+    .btn-enroll{
+        height: 42px;
+        width: 131px;
+        border-radius: 8px;
+    }
 }
